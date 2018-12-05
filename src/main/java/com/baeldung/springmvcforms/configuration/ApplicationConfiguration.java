@@ -10,6 +10,7 @@ import org.springframework.web.servlet.config.annotation.DefaultServletHandlerCo
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
@@ -30,21 +31,22 @@ public class ApplicationConfiguration implements WebMvcConfigurer {
 
     // switch orders to server views from html over views directory
 
-    @Bean
+/*    @Bean
     public InternalResourceViewResolver jspViewResolver() {
         InternalResourceViewResolver bean = new InternalResourceViewResolver();
         bean.setPrefix("/WEB-INF/views/");
         bean.setSuffix(".jsp");
         bean.setOrder(1);
         return bean;
-    }
+    }*/
 
     @Bean
     public InternalResourceViewResolver htmlViewResolver() {
         InternalResourceViewResolver bean = new InternalResourceViewResolver();
         bean.setPrefix("/WEB-INF/html/");
         bean.setSuffix(".html");
-        bean.setOrder(2);
+        bean.setViewClass(JstlView.class);
+       // bean.setOrder(2);
         return bean;
     }
 

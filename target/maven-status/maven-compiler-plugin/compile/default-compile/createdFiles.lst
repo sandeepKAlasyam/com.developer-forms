@@ -1,0 +1,15 @@
+com\baeldung\springmvcforms\domain\User.class
+com\baeldung\jstl\dbaccess\PSQLConnection.class
+com\baeldung\springmvcforms\controller\CustomerController.class
+com\baeldung\jstl\bundles\CustomMessage_fr_FR.class
+com\baeldung\springmvcforms\configuration\WebInitializer.class
+com\baeldung\springmvcforms\interceptor\FileUploadExceptionAdvice.class
+com\baeldung\springmvcforms\validator\CustomerValidator.class
+com\baeldung\springmvcforms\configuration\ApplicationConfiguration.class
+com\baeldung\jstl\bundles\CustomMessage_en.class
+com\baeldung\springmvcforms\domain\Customer.class
+com\baeldung\springmvcforms\controller\UserController.class
+com\baeldung\springmvcforms\domain\Employee.class
+com\baeldung\springmvcforms\controller\EmployeeController.class
+com\baeldung\jstl\controllers\JSTLController.class
+com\baeldung\springmvcforms\controller\FileUploadController.class

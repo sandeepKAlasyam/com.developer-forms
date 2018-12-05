@@ -31,6 +31,11 @@ public class UserController {
         return "user";
     }
 
+    @GetMapping("/")
+    public String getUserProfilePage1() {
+        return "user";
+    }
+
     @PostMapping("/user")
     @ResponseBody
     public ResponseEntity<Object> saveUser(@Valid User user, BindingResult result, Model model) {
